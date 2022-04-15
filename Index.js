@@ -1,5 +1,5 @@
 Discord = require('discord.js');
-Client = new Discord.Client();
+Client = new Discord.Client({ intents: new Discord.Intents(32767) });
 Client.on('ready', () => { console.log('Ready!') })
 Client.login('TOKEN');
 
