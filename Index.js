@@ -1,7 +1,7 @@
 const { Client, Intents } = require('discord.js');
-Client = new Client({ intents: new Intents(32767) });
-Client.once('ready', () => { console.log('Ready!') })
-Client.login('TOKEN');
+const Client = new Client({ intents: new Intents(32767) });
+client.once('ready', () => { console.log('Ready!') })
+client.login('TOKEN');
 
 const Express = require('express');
 const App = Express();
