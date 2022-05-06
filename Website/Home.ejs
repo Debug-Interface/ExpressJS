@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -26,23 +26,27 @@ img {
 }
 </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title><%= Client.user.username %></title>
-    <link rel="shortcut icon" type="image/jpg" href="<%= Client.user.displayAvatarURL({dynamic: true}) %>">
+    <title><%= client.user.username %></title>
+    <link rel="shortcut icon" type="image/jpg" href="<%= client.user.displayAvatarURL({dynamic: true}) %>">
   </head>
   <body>
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <img src="<%= Client.user.displayAvatarURL({dynamic: true}) %>" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-      <b><%= Client.user.username %></b>
+      <img src="<%= client.user.displayAvatarURL({dynamic: true}) %>" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+      <b><%= client.user.username %></b>
     </a>
   </nav>
   <div class="avatar">
-  <center>
-  <img src="<%= Client.user.displayAvatarURL({dynamic: true}) %>"></center></div>
+    <center> <img src="<%= client.user.displayAvatarURL({dynamic: true}) %>" style="border-radius: 35%"></center>
+  </div>
+  
   <div class="margin">
-  <center>
-    <a href="https://discord.com/api/oauth2/authorize?client_id=<%= Client.user.id %>&permissions=8&scope=bot"><button type="button" class="btn btn-primary btn-lg">Invite To Server</button></a>
-  </center></div>
+    <center>
+      <a href="https://discord.com/api/oauth2/authorize?client_id=<%= client.user.id %>&permissions=8&scope=bot">
+        <button type="button" class="btn btn-primary btn-lg">INVITE</button>
+      </a>
+    </center>
+  </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
