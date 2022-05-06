@@ -1,7 +1,8 @@
+const { TOKEN } = process.env;
 const { Client, Intents } = require('discord.js');
-const Client = new Client({ intents: new Intents(32767) });
-client.once('ready', () => { console.log('Ready!') })
-client.login('TOKEN');
+const client = new Client({ intents: new Intents(32767) });
+client.once('ready', () => { console.log(`Name: ${client.user.username}`) });
+client.login(TOKEN);
 
 const Express = require('express');
 const App = Express();
@@ -17,6 +18,6 @@ App.get('/', (req, res) => {
   res.render('Home', { client: client });
 });
 
-App.listen(process.env.PORT, () => {
-  console.log('Server Started');
+App.listen(8080, () => {
+  console.log('Running!');
 });
