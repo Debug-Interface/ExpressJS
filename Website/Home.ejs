@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= client.user.username %></title>
+        <link rel="shortcut icon" type="image/jpg" href="<%= client.user.displayAvatarURL({dynamic: true}) %>">
+    </head>
+    <body>
+      <center>
+        
+        <br>
+        <br>
+        
+        <img src="<%= client.user.displayAvatarURL() %>" style="border-radius:30%">
+      
+        <br>
+        <br>
+        
+        <a href='https://discord.com/oauth2/authorize?client_id=<%= client.user.id %>&permissions=8&scope=bot%20applications.commands'>
+          <button style="width: 10%; font-size: 30px;">INVITE</button>
+        </a>
+        
+      </center>
+    </body>
+</html>
