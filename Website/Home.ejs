@@ -1,1 +1,201 @@
-https://glitch.com/edit/#!/mango-skillful-diagram?path=Website%2FHome.ejs%3A75%3A22
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap' rel='stylesheet'>
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+    <link rel='stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css' integrity='sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=' crossorigin='anonymous'>
+    <link rel='stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/add.css'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title><%= client.user.username %></title>
+    <link rel='shortcut icon' type='image/jpg' href='<%= client.user.displayAvatarURL({ dynamic: true }) %>'>
+  </head>
+    <body>
+      <header>
+        <nav class="navbar">
+          <div class="max-width">
+            <div class="logo">
+              <a href="#"> <%= client.user.username %> </a>
+            </div>
+              <ul class="menu">
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Features</a></li>
+                <li><a href='#'>Docs</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>Support</a></li>
+              </ul>
+              <a href='https://discord.com/api/oauth2/authorize?client_id=<%= client.user.id %>&redirect_uri=https%3A%2F%2Fmango-skillful-diagram.glitch.me%2Fcallback&response_type=code&scope=identify%20connections'><button class='Login'>Log In</button></a>
+           </div>
+        </nav>
+      </header>
+        <main>
+          <section class="presentation">
+            <div class="introduction">
+              <div class="intro-text" data-aos="fade-down">
+                <h1><%= client.user.username %></h1>
+                  <p><%= client.user.username %>'s Info</p>
+                  </div>
+                <div class="cta" data-aos="fade-down">
+                  <a href="https://discord.com/oauth2/authorize?client_id=<%= client.user.id %>&permissions=512&scope=bot%20applications.commands"><button class="invite-epicbot"><i class="fa fa-plus-circle"> &nbsp;Add to Server</i></button></a>
+                  <a href="#"><button class="discord-server"><i class="fa fa-plus-circle"> &nbsp;Discord Server</i></button></a>
+                </div>
+              </div>
+              <div class="cover" data-aos="fade-down">
+                <img src="<%= client.user.displayAvatarURL() %>" style="border-radius:30%; width:250px; height:250px;">
+              </div>
+              <div class="custom-shape-divider-bottom-1610798309">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                  <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                  <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+              </div>
+              </section>
+            <div class="features">
+              <br><br><br><br>
+              <h2 data-aos="fade-up">Features</h2>
+              <div class="features-section" data-aos="fade-up">
+                <br><br><br><br><br><br><br>
+                <div class="features-blocks">
+                  <br>
+                  <h4>Lorem Ipsum</h4><br>
+                  <p>Lorem Ipsum Dorem Lolu Biku Hhaka</p>
+                </div>
+                <div class="features-blocks">
+                  <br>
+                  <h4>Dorem Porum</h4><br>
+                  <p>holum Ekdam Jokum Nileon Karum
+                  </p>
+                </div>
+                <div class="features-blocks">
+                  <br>
+                  <h4>Keruk Pusek Eksun</h4><br>
+                  <p>Monke Kurto eklo Sukha Menku Khu </p>
+                </div>
+                <div class="features-blocks">
+                  <br>
+                  <h4>Keask Rasak Ipsum</h4><br>
+                  <p>Lorem Dorem Ipsun Kirupun</p>
+                </div>
+              </div>
+            </div>
+            <div class="stats">
+              <div class="custom-shape-divider-top-1610896771">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                  <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                  <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h2 data-aos="fade-up">Stats</h2>
+              <div class="stats-container" data-aos="fade-up">
+                <div class="blocks-features">
+                  <br>
+                  <h4>Users</h4>
+                  <br>
+                  <p><h1><%= client.guilds.cache.reduce((a, g) => a + g.memberCount, 0) %></h1></p>
+                </div>
+                <div class="blocks-features">
+                  <br>
+                  <h4>Servers</h4>
+                  <br>
+                  <p><h1><%= client.guilds.cache.size %></h1></p>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="vote-epicbot-lmfao">
+                <p>Wanna support us? Consider upvoting
+                  <span style="color: #Cb0b0b;"> <%= client.user.username %></span>!
+                    </p>
+                  <a href="#"><button><span>Vote Now!</span></button></a>
+              </div>
+            </div>
+            </main>
+          <footer>
+            <br>
+            Bot Made By <a href='#'>xxSShadow™️</a>
+            <br>
+            Dashboard Made By <a href='#'>NoError Studios™️</a>
+            <br>
+            Copyright © <span style="color: #Cb0b0b;"><%= client.user.username %>™️</span>
+            <br>
+            <br>
+          </footer>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+          *::selection { color: black; background: #00008B; }
+          body { font-family: 'Poppins', sans-serif; }
+          header { display: flex; width: 100%; height: 10vh; margin: auto; align-items: center; background: #121212; }
+          h1, h2, h3, h4, h5, h6, p {color: white; }
+          button { font-family: 'Poppins', sans-serif; }
+          ::-webkit-scrollbar { width: 10px; }
+          ::-webkit-scrollbar-thumb { border-radius: 20px; background: -webkit-gradient(linear, left top, left bottom, from(#008080), to(#00008B)); box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0,0,0,0.25); }
+          ::-webkit-scrollbar-track { background: linear-gradient(to right, #201c29, #201c29 1px, #100e17 1px, #100e17); }
+          .max-width { max-width: 1300px; padding: 0 80px; margin: auto; }
+          .navbar { position: fixed; width: 100%; padding: 30px 0; font-family: 'Ubuntu', sans-serif; transition: all 0.3s ease; }
+          .navbar.sticky { padding: 15px 0; background: #00008B; }
+          .navbar .max-width { display: flex; align-items: center; justify-content: space-between; }
+          .navbar .logo a { color: #fff; font-size: 35px; font-weight: 600; text-decoration: none; }
+          .navbar .logo a span { color: #00008B; transition: all 0.3s ease; }
+          .navbar.sticky .logo a span { color: #fff; }
+          .navbar .menu li { list-style: none; display: inline-block; }
+          .navbar .menu li a { color: #fff; font-size: 18px; font-weight: 500; margin-left: 25px; transition: color 0.3s ease; text-decoration: none; }
+          .navbar .menu li a:hover { color: #Cb0b0b; }
+          .navbar.sticky .menu li a:hover { color: #fff; }
+          .signup-btn { top: 40px; right: 80px; position: absolute; text-decoration: none; color: #fff; border: 2px solid transparent; border-radius: 5px; background-image: linear-gradient(#121212,#121212), radial-gradient(circle at top left, #fd00da, #19d7f8); background-origin: border-box; background-clip: content-box, border-box; }
+          .signup-btn span { display: block; padding: 8px 22px; }
+          .presentation { display: flex; width: 100%; margin: auto; min-height: 80vh; align-items: center; background: #121212; position: relative; }
+          .introduction { flex: 2; }
+          .intro-text { padding-left: 150px; }
+          .intro-text h1 { font-size: 50px; font-weight: 500; }
+          .intro-text h1 span { color: #00008B; }
+          .intro-text p { font-size: 17px; color: #d3d3d3; }
+          .cta { padding: 50px 0px 0px 150px; }
+          .invite-epicbot { border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF;  width: 170px; height: 50px; cursor: pointer; font-size: 16px; border-radius: 5px; transition: 0.25s ease; }
+          .invite-epicbot:hover { transform: translateY(-3px); }
+          .Login { border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF;  width: 120px; height: 50px; cursor: pointer; font-size: 16px; border-radius: 5px; transition: 0.25s ease; }
+          .Login:hover { transform: translateY(-3px); }
+          .discord-server { background: #FFFFFF; width: 170px; height: 50px; cursor: pointer; font-size: 16px; color: black; border: none; margin: 0px 0px 0px 10px; border-radius: 5px; transition: 0.25s ease; }
+          .discord-server:hover { transform: translateY(-3px); }
+          .cover { flex: 1; }
+          .cover img { height: 30vh; }
+          .custom-shape-divider-bottom-1610798309 { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; transform: rotate(180deg); }
+          .custom-shape-divider-bottom-1610798309 svg { position: relative; display: block; width: calc(108% + 1.3px); height: 152px; }
+          .custom-shape-divider-bottom-1610798309 .shape-fill { fill: #00008B; }
+          .custom-shape-divider-top-1610896771 { position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; }
+          .custom-shape-divider-top-1610896771 svg { position: relative; display: block; width: calc(100% + 1.3px); height: 141px; }
+          .custom-shape-divider-top-1610896771 .shape-fill { fill: #00008B; }
+          .features { background: #00008B; position: relative; height: 700px; text-align: center; }
+          .features h2 { font-size: 55px; font-weight: 1000; color: : #FFFFFF; }
+          .features-section { display: flex; padding-top: 100px; margin: 0 5% 0 5%; }
+          .features-blocks { border: 2px solid #121212; background: #121212; width: 280px; height: 275px; border-radius: 50px; transition: 0.1s ease; margin: auto; }
+          .features-blocks:hover { transform: translateY(-10px); box-shadow: 0 2px 2px 10px #00008B; }
+          .features-blocks h4 { font-size: 30px; }
+          .features-blocks p { padding: 0 20px 0 20px; color: #C0C0C0; }
+          .blocks-features { border: 2px solid #121212; background: #00008B; width: 280px; height: 275px; border-radius: 50px; transition: 0.1s ease; margin: auto; }
+          .blocks-features:hover { transform: translateY(-10px); box-shadow: 0 2px 2px 10px #00008B; }
+          .blocks-features h4 { font-size: 30px; }
+          .blocks-features p { padding: 0 20px 0 20px; color: #C0C0C0; }
+          .stats { position: relative; background: #121212; height: 1050px; }
+          .stats h2 { font-size: 55px; font-weight: 1000; text-align: center; padding-top: 80px; }
+          .stats-container { display: flex; margin: 0 25% 0 25%; padding-top: 200px; text-align: center; }
+          .stat-boxes { border: 2px solid #121212; background: #00008B; width: 280px; height: 275px; border-radius: 50px; transition: 0.1s ease; margin: auto; }
+          .stat-boxes:hover { transform: translateY(-10px); box-shadow: 0 2px 2px 10px #00008B; }
+          .stat-boxes h4 { padding: 20px 20px 0 20px; color: #121212; font-size: 45px; }
+          .stat-boxes p { font-size: 35px; color: #D3D3D3; }
+          .vote-epicbot-lmfao { text-align: center; justify-content: center; align-items: center; padding-top: 50px; }
+          .vote-epicbot-lmfao p { text-align: center; margin-top: 100px; color: #d3d3d3; font-size: 20px; }
+          .vote-epicbot-lmfao *::selection { background: #Cb0b0b; }
+          .vote-epicbot-lmfao button { margin-top: 30px; text-align: center; align-items: center; justify-content: center; background: linear-gradient(45deg, #601010, #Cb0b0b, #F52020); border: none; padding: 10px 20px 10px 20px; font-size: 20px; border-radius: 50px; width: 175px; transition: 0.5s ease; }
+          .vote-epicbot-lmfao button:hover { cursor: pointer; transform: translateY(-5px); }
+          .vote-epicbot-lmfao button:hover:before { content: "Click Me!"; }
+          .vote-epicbot-lmfao button:hover span { display: none; }
+          footer { background: #2d2d2d; color: #fff; text-align: center; font-size: 16px; }
+          footer a { text-decoration: none; color: #Cb0b0b; }
+          @keyframes drop { 0% { opacity: 0; transform: translateY(-80px) } 100% { opacity: 1; transform: translateY(0) } }
+        </style>
+    </body>
+</html>
