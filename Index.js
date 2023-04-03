@@ -26,5 +26,3 @@ App.get('/', (req, res) => {
 App.listen(8080, () => {
   console.log('Running!');
 });
-
-```
